@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "bloodborneweapons",
+	"version": "${version}",
+	"name": "BloodBorne Weapons",
+	"description": "This is a mod that tries to implement Bloodborne weapons to Minecraft!",
+	"authors": [
+		"PotatoJitsu_"
+	],
+	"contact": {
+		"homepage": "https://potatojitsu.net",
+		"sources": "https://github.com/Fabric-Mods-1.21.x"
+	},
+	"license": "MIT",
+	"icon": "assets/bloodborneweapons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.potatojitsu.bloodborneweapons.BloodBorneWeapons"
+		],
+		"fabric-datagen": [
+			"net.potatojitsu.bloodborneweapons.BloodBorneWeaponsDataGenerator"
+		],
+		"client": [
+			"net.potatojitsu.bloodborneweapons.BloodBorneWeaponsClient"
+		]
+	},
+	"mixins": [
+		"bloodborneweapons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
